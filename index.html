@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharchaji - Voice-First & Offline-First Expense Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1976D2;
+            --primary-dark: #115293;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --bg-light: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --border: #E2E8F0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 1.5rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--primary); }
+        .hero {
+            max-width: 900px;
+            margin: 4rem auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+            color: #0F172A;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .badge {
+            background: #EFF6FF;
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            border: 1px solid #BFDBFE;
+        }
+        .features {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 0 1.5rem;
+        }
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+        }
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #0F172A;
+        }
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .privacy-highlight {
+            background: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 1rem;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            padding: 2.5rem;
+            text-align: left;
+        }
+        .privacy-highlight h2 {
+            color: #166534;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .privacy-highlight p {
+            color: #15803D;
+            margin-bottom: 1rem;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            background: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+        .footer-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-weight: 600;
+        }
+        .footer-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>💰</span> Kharchaji
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Voice-First Expense Tracking with Zero Cloud Overhead</h1>
+            <p>Kharchaji is a 100% offline-first personal bookkeeping app that lets you log expenses instantly using voice recognition and syncs backups exclusively to your private Google Drive.</p>
+            <div class="badges">
+                <span class="badge">🎙️ Voice Input</span>
+                <span class="badge">🔒 100% Offline-First</span>
+                <span class="badge">☁️ Google Drive AppData Sync</span>
+                <span class="badge">🚫 Zero Central Database</span>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🎙️ Instant Voice Recognition</h3>
+                <p>Log complex expenses with amount, category, and remarks in natural spoken Hindi or English directly on your device.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Total Data Sovereignty</h3>
+                <p>Your ledger stays on your phone. No logins required, no tracking ads, and zero server storage of your financial numbers.</p>
+            </div>
+            <div class="feature-card">
+                <h3>☁️ Private Google Drive Backup</h3>
+                <p>Connect your personal Google Account to automatically sync compressed encrypted snapshots into your hidden Google Drive app folder.</p>
+            </div>
+        </section>
+
+        <section class="privacy-highlight">
+            <h2>🛡️ Our Privacy Guarantee</h2>
+            <p><strong>Kharchaji operates on a Zero-Server architecture.</strong> We do not operate any backend servers, databases, or user identity directories.</p>
+            <p>When you enable Google Drive Backup, Kharchaji uses the restricted <code>drive.appdata</code> scope to store your financial ledger strictly inside your own Google Drive's hidden application folder. Our app cannot read, modify, or access any other files in your Google Drive.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:abhishek2305soni@gmail.com">Contact Support</a>
+        </div>
+        <p>© 2026 Kharchaji by Abhishek Soni. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">Support contact: abhishek2305soni@gmail.com</p>
+    </footer>
+</body>
+</html>
